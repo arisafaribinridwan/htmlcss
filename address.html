@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTML and CSS for Complete Beginners Homework: Address</title>
+
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Write your CSS here */
+      /* reset */
+      * {
+        box-sizing: content-box;
+      }
+
+      html {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+      }
+
+	  hr {
+		  margin: 2rem 0;
+	  }
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(19, 42, 59);
+      }
+
+      p.muted {
+        color: rgb(115, 117, 119);
+      }
+
+      span {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #455764;
+      }
+
+      a {
+        text-decoration: none;
+        color: #f66c14;
+      }
+
+      a:hover {
+        color: #455764;
+      }
+
+      .learn {
+        background-color: #f7f8f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card {
+        background-color: white;
+        padding: 2.5rem;
+        width: 300px;
+        border-radius: 0.5rem;
+        /* margin: auto; */
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+          -10px 10px 15px -3px rgba(0, 0, 0, 0.1),
+          10px 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="learn">
+      <!-- Practice area start -->
+      <!-- Write your HTML here -->
+
+      <div class="card">
+        <img src="images/address/envelopes-bulk.svg" alt="envelope-bulk" />
+
+        <h1>Let's get in touch</h1>
+
+        <p class="muted">
+          9 Augusta Street <br/>
+          Fair Lawn, NJ 07410
+        </p>
+
+        <hr />
+
+        <p>
+          <span>email</span><br />
+          <a href="">chuck@roundhouse.com</a><br/>
+        </p>
+        <p>
+          <span>phone</span><br />
+          <a href="">+1-202-555-0125</a><br/>
+        </p>
+      </div>
+
+      <!-- Practice area end -->
+    </section>
+
+    <section class="preview" data-content="Address">
+      <img width="444px" src="images/reference/address.png" alt="Address" />
+    </section>
+  </body>
+</html>

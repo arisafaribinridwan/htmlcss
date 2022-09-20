@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTML and CSS for Complete Beginners Homework: Contact form</title>
+
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* reset */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Typography start*/
+      html {
+        font-family: "Poppins", monospace;
+        font-size: 16px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        font-weight: 900;
+        color: rgb(19, 42, 59);
+        margin: 1.5rem 0;
+      }
+
+      form label {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        color: rgb(19, 42, 59);
+      }
+
+      form input,
+      form select,
+      form textarea {
+        font-family: "Poppins", monospace;
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.8);
+        margin-bottom: 1rem;
+      }
+
+      a {
+        font-weight: 700;
+        text-decoration: none;
+      }
+      /* Typography end */
+
+      /* layout start */
+      .container {
+        width: 100%;
+      }
+
+      form label {
+        display: block;
+        text-align: start;
+        margin-bottom: 0.5rem;
+      }
+
+      form input,
+      form select,
+      form textarea {
+        background-color: #f3f4f5;
+        border: none;
+        border-radius: 6px;
+        padding: 1rem;
+        width: 100%;
+        resize: none;
+      }
+      /* layout end */
+      .learn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .card {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 2.5rem;
+        margin: 0 auto;
+        width: 482px;
+        border-radius: 0.5rem;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0px -5px 15px -3px rgba(0, 0, 0, 0.1),
+          -10px 10px 15px -3px rgba(0, 0, 0, 0.1),
+          10px 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="learn">
+      <!-- Practice area start -->
+
+      <div class="card">
+        <div class="container">
+          <img src="images/contact-form/envelope.svg" alt="envelope-bulk" />
+          <h1>Let's get in touch</h1>
+          <form action="#" method="post">
+            <div>
+              <label for="contact-name">name</label>
+              <input type="text" id="contact-name" name="contact-name" />
+            </div>
+            <div>
+              <label for="contact-email">email</label>
+              <input type="text" id="contact-email" name="contact-email" />
+            </div>
+            <div>
+              <label for="contact-dept">department</label>
+              <select name="contact-dept" id="contact-dept">
+                <option value="">Select a department</option>
+                <option value="qrcc">QRCC</option>
+                <option value="cbu">CBU</option>
+                <option value="regulation">Regulation</option>
+                <option value="sales">Sales</option>
+              </select>
+            </div>
+            <div>
+              <label for="contact-message">message</label>
+              <textarea
+                name="contact-message"
+                id="contact-message"
+                cols="30"
+                rows="10"
+                placeholder="Hey, I'd like to get in touch with your sales department regarding a possible collaboration"
+              ></textarea>
+            </div>
+            <a href="#" class="btn">Send Message</a>
+          </form>
+        </div>
+      </div>
+
+      <!-- Practice area end -->
+    </section>
+
+    <section class="preview" data-content="Contact form">
+      <img
+        width="560px"
+        src="images/reference/contact-form.png"
+        alt="Contact form"
+      />
+    </section>
+  </body>
+</html>
