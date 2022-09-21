@@ -1,32 +1,105 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>HTML and CSS for Complete Beginners Homework: Header</title>
+    <title>HTML and CSS for Complete Beginners Homework: Header</title>
 
-		<!-- This CSS and font is purely for presentational purposes. -->
-		<link rel="stylesheet" href="css/presentation.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-		<style>
-			/* Write your CSS here */
-		</style>
-	</head>
-	<body class="flip">
-		<section class="learn">
-			<!-- Practice area start -->
+    <style>
+      /* Global style */
+      * {
+        box-sizing: border-box;
+      }
 
-			<!-- Write your HTML here -->
+      html {
+        font-family: "Poppins", monospace;
+        font-size: 16px;
+      }
 
-			<!-- Practice area end -->
-		</section>
+      .learn {
+        background-color: #f7f8f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-		<section class="preview" data-content="Header">
-			<img width="945px" src="images/reference/header.png" alt="Header" />
-		</section>
-	</body>
+      .container {
+        padding: 2.5rem;
+        width: 880px;
+        background-color: white;
+        border-radius: 6px;
+        box-shadow: 0px 10px 15px -1px rgba(0, 0, 0, .1),
+          -10px 10px 15px -1px rgba(0, 0, 0, 0.1),
+          10px 10px 15px -1px rgba(0, 0, 0, 0.1);
+      }
+
+      .card {
+      }
+
+      .nav-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+      }
+
+      ul {
+        display: inline-flex;
+        gap: 2rem;
+	}
+	
+	.menus {
+		list-style: none;
+	}
+	
+	.menus a {
+		text-decoration: none;
+		font-size: 16px;
+        font-weight: 900;
+        color: #524c4e;
+      }
+    </style>
+  </head>
+  <body class="flip">
+    <section class="learn">
+      <!-- Practice area start -->
+
+      <div class="container">
+        <div class="card">
+          <nav class="nav-bar">
+            <div class="brand">
+              <a href="#"
+                ><img src="images/header/logo.svg" alt="brand-logo"
+              /></a>
+            </div>
+            <div class="nav-menu">
+              <ul>
+                <li class="menus"><a href="#">Portfolio</a></li>
+                <li class="menus"><a href="#">Services</a></li>
+                <li class="menus"><a href="#">Blog</a></li>
+                <li class="menus"><a href="#">About Me</a></li>
+                <li class="menus"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Practice area end -->
+    </section>
+
+    <section class="preview" data-content="Header">
+      <img width="945px" src="images/reference/header.png" alt="Header" />
+    </section>
+  </body>
 </html>
