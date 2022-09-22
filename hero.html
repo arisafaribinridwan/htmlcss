@@ -36,17 +36,25 @@
       }
 
       .container {
-        padding: 2rem;
-        width: 100%;
+        padding: 2.5rem;
+        width: 85%;
+        background-color: white;
+        border-radius: 6px;
+        box-shadow: 0px 10px 15px -1px rgba(0, 0, 0, 0.1),
+          -10px 10px 15px -1px rgba(0, 0, 0, 0.1),
+          10px 10px 15px -1px rgba(0, 0, 0, 0.1);
       }
 
       /* ========= Header section start ========= */
       .nav-bar {
-        background-color: white;
         display: flex;
         justify-content: center;
         justify-content: space-between;
         align-items: center;
+      }
+
+      .header {
+        margin-bottom: 5rem  ;
       }
 
       .brand-logo {
@@ -65,10 +73,38 @@
       ul li {
         text-decoration: none;
         list-style: none;
-        font-size: 16px;
+        font-size: .8rem;
         /* font-weight: 900; */
         color: #524c4e;
       }
+
+      .menus ul li a {
+        text-decoration: none;
+        color: #524c4e;
+      }
+
+      .btn {
+        padding: 12px 18px;
+        border: 1px solid #2C86D9;
+        border-radius: 2rem;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .btn-white {
+        color: #2C86D9;
+      }
+       /* ========= Header section end ========= */
+
+/* ========= hero section start ========= */
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }      
+/* ========= Header section end ========= */
+
     </style>
   </head>
   <body class="flip">
@@ -88,19 +124,19 @@
             </div>
             <div class="menus">
               <ul>
-                <li>Discover Wally</li>
-                <li>Pricing</li>
-                <li>About Us</li>
-                <li>Contact</li>
+                <li><a href="">Discover Wally</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact</a></li>
               </ul>
             </div>
-            <button>
+            <a class="btn btn-white">
               Start Now
               <img
                 src="images/hero/arrow-right-color.svg"
                 alt="arrow-right-color"
               />
-            </button>
+            </a>
           </nav>
         </div>
 
@@ -112,7 +148,7 @@
               Add your cards and pay with your phone everywhere. Convenience is
               the key
             </h2>
-            <a class="btn" href="#"
+            <a class="btn btn-blue" href="#"
               >Buy it now
               <img
                 src="images/hero/arrow-right-white.svg"
