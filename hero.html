@@ -57,10 +57,6 @@
         margin-bottom: 5rem  ;
       }
 
-      .brand-logo {
-        width: 2rem;
-      }
-
       ul {
         display: inline-flex;
         grid-gap: 2rem;
@@ -78,24 +74,36 @@
         color: #524c4e;
       }
 
-      .menus ul li a {
+      .menus a {
         text-decoration: none;
         color: #524c4e;
       }
 
+      .menus a:hover {
+        color: #2C86d9;
+        cursor: pointer;
+      }
+
       .btn {
         padding: 12px 18px;
-        border: 1px solid #2C86D9;
+        background-color: #2C86D9;
+        color: #ffffff;
         border-radius: 2rem;
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
+        gap: .5rem;
+        text-decoration: none;
+        cursor: pointer;
       }
 
-      .btn-white {
+      .outline {
+        background-color: transparent;
         color: #2C86D9;
+        border: 2px solid #2C86D9;
       }
+
+      
        /* ========= Header section end ========= */
 
 /* ========= hero section start ========= */
@@ -130,7 +138,7 @@
                 <li><a href="">Contact</a></li>
               </ul>
             </div>
-            <a class="btn btn-white">
+            <a class="btn outline">
               Start Now
               <img
                 src="images/hero/arrow-right-color.svg"
@@ -148,7 +156,7 @@
               Add your cards and pay with your phone everywhere. Convenience is
               the key
             </h2>
-            <a class="btn btn-blue" href="#"
+            <a class="btn" href="#"
               >Buy it now
               <img
                 src="images/hero/arrow-right-white.svg"
