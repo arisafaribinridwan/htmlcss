@@ -36,8 +36,8 @@
       }
 
       .container {
-        padding: 2.5rem;
-        width: 85%;
+        padding: 3rem;
+        width: 100%;
         background-color: white;
         border-radius: 6px;
         box-shadow: 0px 10px 15px -1px rgba(0, 0, 0, 0.1),
@@ -60,7 +60,7 @@
       }
 
       .header {
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
       }
 
       ul {
@@ -75,7 +75,7 @@
       ul li {
         text-decoration: none;
         list-style: none;
-        font-size: 0.8rem;
+        /* font-size: 0.8rem; */
         /* font-weight: 900; */
         color: rgb(82, 76, 78);
       }
@@ -107,6 +107,10 @@
         border: 2px solid #2c86d9;
       }
 
+      .btn-mobile {
+        display: none;
+      }
+
       /* ========= Header section end ========= */
 
       /* ========= hero section start ========= */
@@ -115,18 +119,49 @@
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         align-items: center;
-        gap: 8rem;
+        gap: 2rem;
       }
 
       .hero img {
         max-width: 100%;
       }
 
-      h1 {
-        font-size: 3.15rem;
-        line-height: 1.33rem;
+      /* .hero.content {
+        display: block;
+        text-align: start;
+      } */
+
+      p.accent {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: rgb(63, 212, 166);
       }
-      /* ========= Header section end ========= */
+
+      h1 {
+        font-size: 3.1rem;
+        line-height: 1.2;
+        letter-spacing: -2px;
+        margin: 0.5rem 0 3rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-bottom: 3rem;
+        color: rgba(19, 42, 59, 0.8);
+      }
+      /* ========= Hero section end ========= */
+
+      /* ========= Mobile version start ========= */
+
+      @media screen and (max-width: 950px) {
+        .brand {
+          display: none;
+        }
+      }
+
+      /* ========= Mobile version end ========= */
     </style>
   </head>
   <body class="flip">
@@ -152,7 +187,7 @@
                 <li><a href="">Contact</a></li>
               </ul>
             </div>
-            <a class="btn outline">
+            <a href="#" class="btn outline">
               Start Now
               <img
                 src="images/hero/arrow-right-color.svg"
@@ -160,6 +195,9 @@
               />
             </a>
           </nav>
+          <a href="#" class="btn-mobile">
+            <img src="images/hero/menu-dots.svg" alt="mobile-menu" />
+          </a>
         </div>
 
         <section class="hero">
