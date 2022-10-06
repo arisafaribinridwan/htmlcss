@@ -1,32 +1,235 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>HTML and CSS for Complete Beginners Homework: Order form</title>
+    <title>HTML and CSS for Complete Beginners Homework: Order form</title>
 
-		<!-- This CSS and font is purely for presentational purposes. -->
-		<link rel="stylesheet" href="css/presentation.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-		<style>
-			/* Write your CSS here */
-		</style>
-	</head>
-	<body class="flip">
-		<section class="learn">
-			<!-- Practice area start -->
+    <style>
+      * {
+        font-family: "Poppins";
+      }
 
-			<!-- Write your HTML here -->
+      h1 {
+        font-size: 2rem;
+        font-weight: 900;
+        color: #132a3b;
+      }
+    </style>
+  </head>
+  <body class="flip">
+    <section class="learn">
+      <!-- Practice area start -->
 
-			<!-- Practice area end -->
-		</section>
+      <div class="card">
+        <h1>Your Order</h1>
+        <form action="#" method="post">
+          <!-- row-1 start -->
+          <div class="row-1">
+            <div>
+              <label for="order-name">Name</label>
+              <input
+                type="text"
+                name="order-name"
+                id="order-name"
+                placeholder="Your full name"
+              />
+            </div>
 
-		<section class="preview" data-content="Order form">
-			<img width="903px" src="images/reference/order-form.png" alt="Order form" />
-		</section>
-	</body>
+            <div>
+              <label for="order-email">Email address</label>
+              <input
+                type="text"
+                name="order-email"
+                id="order-email"
+                placeholder="chuck@roundhouse.com"
+              />
+            </div>
+          </div>
+
+          <!-- row-2 start -->
+          <div class="row-2">
+            <div>
+              <label for="order-address">Address</label>
+              <input
+                type="text"
+                name="order-address"
+                id="order-address"
+                placeholder="9 August Street"
+              />
+            </div>
+
+            <div>
+              <input
+                type="text"
+                name="order-address"
+                id="order-address"
+                placeholder="Suite 122"
+              />
+            </div>
+          </div>
+
+          <!-- row-3 start -->
+          <div class="row-3">
+            <div>
+              <label for="order-city">City</label>
+              <input
+                type="text"
+                name="order-city"
+                id="order-city"
+                placeholder="New jersey"
+              />
+            </div>
+
+            <div>
+              <label for="order-state">State</label>
+              <select name="order-state" id="order-state">
+                <option value="Alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <option value="Anchor">Anchor</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="order-zip">ZIP</label>
+              <input type="number" for="order-zip" id="order-zip" />
+            </div>
+          </div>
+
+          <!-- row-4 start -->
+          <div class="row-4">
+            <label>What colours sample should we send you?</label>
+            <label for="colors-white">
+              <input
+                type="checkbox"
+                name="color-white"
+                id="color-white"
+                value="white"
+              />White
+            </label>
+
+            <label for="colors-magenta">
+              <input
+                type="checkbox"
+                name="colors-magenta"
+                id="colors-magenta"
+                value="magenta"
+              />
+              Magenta
+            </label>
+
+            <label for="colors-coral">
+              <input
+                type="checkbox"
+                name="colors-coral"
+                id="colors-coral"
+                value="coral"
+              />
+              Coral
+            </label>
+
+            <label for="colors-burgundy">
+              <input
+                type="checkbox"
+                name="colors-burgundy"
+                id="colors-burgundy"
+                value="burgundy"
+              />
+              Burgundy
+            </label>
+
+            <label for="colors-Charcoal">
+              <input
+                type="checkbox"
+                name="colors-Charcoal"
+                id="colors-Charcoal"
+                value="Charcoal"
+              />
+              Charcoal
+            </label>
+
+            <!-- row-5 start -->
+            <div class="row-5">
+              <label>How large is your team?</label>
+              <label for="small-team">
+                <input
+                  type="radio"
+                  name="small-team"
+                  id="small-team"
+                  value="1-5 people"
+                />
+                1-5 People
+              </label>
+
+              <label for="middle-team">
+                <input
+                  type="radio"
+                  name="middle-team"
+                  id="middle-team"
+                  value="6-10 people"
+                />
+                6-10 People
+              </label>
+
+              <label for="big-team">
+                <input
+                  type="radio"
+                  name="big-team"
+                  id="big-team"
+                  value="10+ people"
+                />
+                10+ People
+              </label>
+
+              <!-- comment start -->
+              <div class="comment">
+                <label for="order-comment">
+                  <textarea
+                    name="order-comment"
+                    id="order-comment"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </label>
+              </div>
+            </div>
+
+            <!-- remember and button order -->
+            <div class="row-button">
+              <div class="sign-up-button">
+                <input
+                  type="checkbox"
+                  id="sign-up"
+                  name="sign-up"
+                  value="sign-up"
+                />
+                <label for="sign-up">Sign up for special offers</label>
+              </div>
+              <div class="btn">Place Order</div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Practice area end -->
+    </section>
+
+    <section class="preview" data-content="Order form">
+      <img
+        width="903px"
+        src="images/reference/order-form.png"
+        alt="Order form"
+      />
+    </section>
+  </body>
 </html>
