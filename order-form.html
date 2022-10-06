@@ -25,6 +25,26 @@
         font-weight: 900;
         color: #132a3b;
       }
+
+      label{
+        display: block;
+      }
+
+      input#sign-up,
+      .sign-up-section label{
+        display: inline-block;
+      }
+
+      .row-1,
+      .row-2,
+      .row-3,
+      .row-4,
+      .row-comment,
+      .row-button,
+      .team-option,
+      .colors-option {
+        display: flex;
+      }
     </style>
   </head>
   <body class="flip">
@@ -109,104 +129,104 @@
           <!-- row-4 start -->
           <div class="row-4">
             <label>What colours sample should we send you?</label>
-            <label for="colors-white">
-              <input
-                type="checkbox"
-                name="color-white"
-                id="color-white"
-                value="white"
-              />White
-            </label>
-
-            <label for="colors-magenta">
-              <input
-                type="checkbox"
-                name="colors-magenta"
-                id="colors-magenta"
-                value="magenta"
-              />
-              Magenta
-            </label>
-
-            <label for="colors-coral">
-              <input
-                type="checkbox"
-                name="colors-coral"
-                id="colors-coral"
-                value="coral"
-              />
-              Coral
-            </label>
-
-            <label for="colors-burgundy">
-              <input
-                type="checkbox"
-                name="colors-burgundy"
-                id="colors-burgundy"
-                value="burgundy"
-              />
-              Burgundy
-            </label>
-
-            <label for="colors-Charcoal">
-              <input
-                type="checkbox"
-                name="colors-Charcoal"
-                id="colors-Charcoal"
-                value="Charcoal"
-              />
-              Charcoal
-            </label>
-
+            <div class="colors-option">
+              <label for="colors-white">
+                <input
+                  type="checkbox"
+                  name="color-white"
+                  id="color-white"
+                  value="white"
+                />White
+              </label>
+              <label for="colors-magenta">
+                <input
+                  type="checkbox"
+                  name="colors-magenta"
+                  id="colors-magenta"
+                  value="magenta"
+                />
+                Magenta
+              </label>
+              <label for="colors-coral">
+                <input
+                  type="checkbox"
+                  name="colors-coral"
+                  id="colors-coral"
+                  value="coral"
+                />
+                Coral
+              </label>
+              <label for="colors-burgundy">
+                <input
+                  type="checkbox"
+                  name="colors-burgundy"
+                  id="colors-burgundy"
+                  value="burgundy"
+                />
+                Burgundy
+              </label>
+              <label for="colors-Charcoal">
+                <input
+                  type="checkbox"
+                  name="colors-Charcoal"
+                  id="colors-Charcoal"
+                  value="Charcoal"
+                />
+                Charcoal
+              </label>
+            </div>
+          </div>
             <!-- row-5 start -->
             <div class="row-5">
               <label>How large is your team?</label>
-              <label for="small-team">
-                <input
-                  type="radio"
-                  name="small-team"
-                  id="small-team"
-                  value="1-5 people"
-                />
-                1-5 People
-              </label>
-
-              <label for="middle-team">
-                <input
-                  type="radio"
-                  name="middle-team"
-                  id="middle-team"
-                  value="6-10 people"
-                />
-                6-10 People
-              </label>
-
-              <label for="big-team">
-                <input
-                  type="radio"
-                  name="big-team"
-                  id="big-team"
-                  value="10+ people"
-                />
-                10+ People
-              </label>
+              <div class="team-option">
+                <label for="small-team">
+                  <input
+                    type="radio"
+                    name="small-team"
+                    id="small-team"
+                    value="1-5 people"
+                  />
+                  1-5 People
+                </label>
+                <label for="middle-team">
+                  <input
+                    type="radio"
+                    name="middle-team"
+                    id="middle-team"
+                    value="6-10 people"
+                  />
+                  6-10 People
+                </label>
+                <label for="big-team">
+                  <input
+                    type="radio"
+                    name="big-team"
+                    id="big-team"
+                    value="10+ people"
+                  />
+                  10+ People
+                </label>
+              </div>
+            </div>
 
               <!-- comment start -->
               <div class="comment">
                 <label for="order-comment">
+                  Comment
+                </label>
                   <textarea
                     name="order-comment"
                     id="order-comment"
                     cols="30"
                     rows="10"
                   ></textarea>
-                </label>
               </div>
             </div>
 
             <!-- remember and button order -->
             <div class="row-button">
-              <div class="sign-up-button">
+              <div class="sign-up-section">
                 <input
                   type="checkbox"
                   id="sign-up"
