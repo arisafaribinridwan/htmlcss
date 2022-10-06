@@ -1,32 +1,129 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>HTML and CSS for Complete Beginners Homework: Menu</title>
+    <title>HTML and CSS for Complete Beginners Homework: Menu</title>
 
-		<!-- This CSS and font is purely for presentational purposes. -->
-		<link rel="stylesheet" href="css/presentation.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-		<style>
-			/* Write your CSS here */
-		</style>
-	</head>
-	<body>
-		<section class="learn">
-			<!-- Practice area start -->
+    <style>
+      * {
+        font-family: "Poppins";
+        box-sizing: border-box;
+      }
 
-			<!-- Write your HTML here -->
+      .learn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-			<!-- Practice area end -->
-		</section>
+      .card {
+        box-sizing: border-box;
+        background-color: white;
+        padding: 3rem;
+        width: 395px;
+        height: 590px;
+        border-radius: 0.5rem;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0px -5px 15px -3px rgba(0, 0, 0, 0.1),
+          -10px 10px 15px -3px rgba(0, 0, 0, 0.1),
+          10px 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
 
-		<section class="preview" data-content="Menu">
-			<img width="458px" src="images/reference/menu.png" alt="Menu" />
-		</section>
-	</body>
+      h1 {
+        font-size: 2rem;
+        font-weight: 900;
+        margin-top: 0;
+        margin-bottom: 2rem;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .menu-media {
+        font-weight: 700;
+      }
+
+      li {
+        margin-bottom: 0.75rem;
+      }
+
+      .list-menus img {
+        /* height: 1rem; */
+        margin-right: 1rem;
+        vertical-align: middle;
+      }
+
+      .list-menus {
+        padding-inline-start: 0;
+      }
+
+      .list-menus,
+      .list-menus ul {
+        list-style-type: none;
+      }
+
+      .link-media {
+        background-color: #eff1f3;
+        border-radius: 4px;
+        padding: 1.5rem 3rem;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="learn">
+      <!-- Practice area start -->
+      <div class="card">
+        <h1>Application Menu</h1>
+        <ul class="list-menus">
+          <li>
+            <img src="images/menu/menu-icon-1.svg" alt="" />
+            <a href="">Dashboard</a>
+          </li>
+          <li>
+            <img src="images/menu/menu-icon-2.svg" alt="" />
+            <a href="">Pages</a>
+          </li>
+          <li>
+            <img src="images/menu/menu-icon-3.svg" alt="" />
+            <a href="">Posts</a>
+          </li>
+          <li>
+            <img src="images/menu/menu-icon-4.svg" alt="" />
+            <a href="" class="menu-media">Media</a>
+            <ul class="link-media">
+              <li><a href="">Media Library</a></li>
+              <li><a href="">Add Media</a></li>
+              <li><a href="">Media statistics</a></li>
+            </ul>
+          </li>
+          <li>
+            <img src="images/menu/menu-icon-5.svg" alt="" />
+            <a href="">Users</a>
+          </li>
+          <li>
+            <img src="images/menu/menu-icon-6.svg" alt="" />
+            <a href="">Settings</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Practice area end -->
+    </section>
+
+    <section class="preview" data-content="Menu">
+      <img width="458px" src="images/reference/menu.png" alt="Menu" />
+    </section>
+  </body>
 </html>
