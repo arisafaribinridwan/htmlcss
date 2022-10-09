@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  font-size: 16px;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6 );
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 25px 30px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 28px;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 900;
+    position: relative;
+}
+
+.title::before {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6 );
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+}
+
+form .user-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0 12px 0;
+}
+
+.user-details .input-box {
+    width: calc(100% / 2 - 15px);
+    margin-bottom: 15px;
+}
+
+.input-box label.detail {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3 ease;
+}
+
+.user-details .input-box input:focus {
+    border-color: #9b59b6;
+}
+
+span.gender-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.gender-details .gender-category {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin: 14px 0;
+
+}
+
+.gender-details .gender-category label {
+    cursor: pointer;
+}
+
+form .btn {
+    height: 45px;
+    margin: 35px 0;
+}
+
+form .btn input {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6 );
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+form .btn input:hover {
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6 );
+}
+
+@media (max-width:600px){
+    .container {
+        max-width: 90%;
+    }
+
+    .gender-details .gender-category {
+        width: 100%;
+        gap: 5px;
+    }
+
+    form .user-details {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .user-details::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    form .user-details .input-box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:459px){
+    .container,
+    .content,
+    .gender-category {
+        flex-direction: column;
+    }
+}
