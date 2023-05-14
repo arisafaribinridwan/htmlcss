@@ -1,5 +1,6 @@
 html {
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -7,22 +8,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  /* margin: 25px 0; */
 }
 
 .panel {
+  /* max-height: 100vh; */
   background-color: white;
   border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
-  text-transform: uppercase;
   text-align: center;
-  padding: 25px 15px;
-  /* width: 100%; */
-  min-height: 100vh;
+  text-transform: uppercase;
 }
 
 .pricing-plan {
-  border-bottom: 1px solid #c7d6df;
+  border-bottom: 1px solid #e1f1ff;
   padding: 25px 0;
 }
 
@@ -52,6 +56,12 @@ body {
   font-weight: 600;
   color: #1a6deb;
   line-height: 1.5;
+  border-top: 1px solid #e1f1ff;
+  padding: 15px 0;
+}
+
+.pricing-features-item:last-child {
+  border-bottom: 1px solid #e1f1ff;
 }
 
 .pricing-price {
@@ -68,10 +78,37 @@ body {
   padding: 15px 25px;
   border-radius: 10px;
   margin: 25px 0 15px;
+  color: #317beb;
   transition: all 0.2s ease-in-out;
 }
 
 .pricing-button:hover,
 .pricing-button:focus {
   background-color: #e4ebf0;
+}
+
+.pricing-button.is-featured {
+  background-color: #317beb;
+  color: white;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+  background-color: #1660cf;
+}
+
+@media (min-width: 900px) {
+  .panel {
+    flex-direction: row;
+  }
+
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 25px 50px;
+  }
+
+  .pricing-plan:last-child {
+    border-right: none;
+  }
 }
