@@ -6,11 +6,11 @@
     --text-header: #888;
     --button-bg-color: #348efe;
     --button-feature-color: #48aaff;
-    --button-feature-hover:#268aff;
+    --button-feature-hover: #268aff;
 }
 
 html {
-    font-family: 'open-Sans', sans-serif;
+    font-family: "open-Sans", sans-serif;
 }
 
 body {
@@ -102,17 +102,17 @@ body {
     background-color: var(--button-feature-hover);
 }
 @media (min-width: 900px) {
-  .panel {
-    flex-direction: row;
-  }
+    .panel {
+        flex-direction: row;
+    }
 
-  .pricing-plan {
-    border-bottom: none;
-    border-right: 1px solid #e1f1ff;
-    padding: 25px 50px;
-  }
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+    }
 
-  .pricing-plan:last-child {
-    border-right: none;
-  }
+    .pricing-plan:last-child {
+        border-right: none;
+    }
 }
