@@ -1,64 +1,136 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>HTML and CSS for Complete Beginners Homework: Characters</title>
+    <title>HTML and CSS for Complete Beginners Homework: Characters</title>
 
-		<!-- This CSS and font is purely for presentational purposes. -->
-		<link rel="stylesheet" href="css/presentation.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-		<style>
-			/* Write your CSS here */
-			.learn {
-				
-			}
+    <style>
+      /* Write your CSS here */
 
-			.container {
-				width: 85%;
-				background-color: white;
-			}
+      html {
+        box-sizing: border-box;
+        font-family: "Poppins";
+      }
 
-			.card {
-				width: 561px;
-				height: 297px;
-				border-radius: 1rem;
-				
-			}
-			#viking {
-				background-image: url('images/characters/bg-elephant.jpg');
-				background-size: 100%;
-			}
-		</style>
-	</head>
-	<body>
-		<section class="learn">
-			<!-- Practice area start -->
-			<div class="container-main">
-				<div class="card" id="viking">
-					<h2>The Viking</h2>
-					<ul class="stats">
-						<li>
-							<p class="title">68%</p>
-							<p>Win Rate</p>
-						</li>
-						<li>
-							<p class="title">522</p>
-							<p>Game Played</p>
-						</li>
-					</ul>
-				</div>
-			</div>
+      .learn {
+        background-color: #f7f8f8;
+        padding: 56px;
+      }
 
-			<!-- Practice area end -->
-		</section>
+      .content {
+        width: 422px;
+        /* margin: 25px; */
+        background-color: white;
+        padding: 36px;
+        border-radius: 8px;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
 
-		<section class="preview" data-content="Characters">
-			<img width="720px" src="images/reference/characters.png" alt="Characters" />
-		</section>
-	</body>
+      .card {
+        width: 422px;
+        height: 222px;
+        border-radius: 15px;
+        margin-bottom: 36px;
+        position: relative;
+      }
+
+      .card:last-child {
+        margin-bottom: 0;
+      }
+
+      .viking {
+        background-image: url("./images/characters/bg-elephant.jpg");
+        background-size: cover;
+      }
+
+      .sorceress {
+        background-image: url("./images/characters/bg-cat.jpg");
+        background-size: cover;
+      }
+
+      .fashionista {
+        background-image: url("./images/characters/bg-bunny.jpg");
+        background-size: cover;
+      }
+
+      .detail {
+        position: absolute;
+        top: 70px;
+        left: 195px;
+        /* font-family: "Poppins"; */
+      }
+
+      .detail h2 {
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 0;
+      }
+
+      p {
+        font-size: 10px;
+        color: #575858;
+        display: inline-block;
+        margin: 0 20px 0 0;
+      }
+
+      .data {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 32px;
+        color: black;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="learn">
+      <!-- Practice area start -->
+      <div class="content">
+        <div class="card viking">
+          <div class="detail">
+            <h2>The Viking</h2>
+            <p><span class="data">68%</span> Win Rate</p>
+            <p><span class="data">522</span> Game Played</p>
+          </div>
+        </div>
+
+        <div class="card sorceress">
+          <div class="detail">
+            <h2>The Sorceress</h2>
+            <p><span class="data">97%</span> Win Rate</p>
+            <p><span class="data">1922</span> Game Played</p>
+          </div>
+        </div>
+
+        <div class="card fashionista">
+          <div class="detail">
+            <h2>The Fahionista</h2>
+            <p><span class="data">24%</span> Win Rate</p>
+            <p><span class="data">124</span> Game Played</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Practice area end -->
+    </section>
+
+    <section class="preview" data-content="Characters">
+      <img
+        width="720px"
+        src="images/reference/characters.png"
+        alt="Characters"
+      />
+    </section>
+  </body>
 </html>
