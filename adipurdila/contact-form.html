@@ -16,91 +16,63 @@
     />
 
     <style>
-      /* reset */
       * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        font-family: "Poppins";
       }
 
-      /* Typography start*/
       html {
-        font-family: "Poppins", monospace;
         font-size: 16px;
       }
 
-      h1 {
-        font-size: 1.8rem;
-        font-weight: 900;
-        color: rgb(19, 42, 59);
-        margin: 1.5rem 0;
-      }
-
-      form label {
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 14px;
-        color: rgb(19, 42, 59);
-      }
-
-      form input,
-      form select,
-      form textarea {
-        font-family: "Poppins", monospace;
-        font-size: 16px;
-        font-weight: 400;
-        color: rgba(0, 0, 0, 0.8);
-        margin-bottom: 1rem;
-      }
-
-      a {
-        font-weight: 700;
-        text-decoration: none;
-      }
-      /* Typography end */
-
-      /* layout start */
-      .container {
-        width: 100%;
-      }
-
-      form label {
-        display: block;
-        text-align: start;
-        margin-bottom: 0.5rem;
-      }
-
-      form input,
-      form select,
-      form textarea {
-        background-color: #f3f4f5;
-        border: none;
-        border-radius: 6px;
-        padding: 1rem;
-        width: 100%;
-        resize: none;
-      }
-      /* layout end */
       .learn {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        background-color: #f7f8f8;
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+        padding-top: 60px;
       }
 
       .card {
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        padding: 2.5rem;
-        margin: 0 auto;
-        width: 482px;
-        border-radius: 0.5rem;
-        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
-          0px -5px 15px -3px rgba(0, 0, 0, 0.1),
-          -10px 10px 15px -3px rgba(0, 0, 0, 0.1),
-          10px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        width: 481px;
+        border-radius: 8px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        padding: 46px;
+      }
+
+      .logo, h1 {
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        font-weight: 900;
+        font-size: 2rem;
+        color: #132A3B;
+      }
+
+      label {
+        display: block;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-top: 2rem;
+        margin-bottom: 8px;
+        color: #132A3B;
+      }
+
+      input, textarea, select {
+        display: inline-block;
+        width: 100%;
+        resize: none;
+        background-color: #F3F4F5;
+        border: none;
+        padding: 1rem;
+        font-size: 18px;
+        border-radius: 8px;
       }
     </style>
   </head>
@@ -110,16 +82,26 @@
 
       <div class="card">
         <div class="container">
-          <img src="images/contact-form/envelope.svg" alt="envelope-bulk" />
+          <img src="images/contact-form/envelope.svg" alt="envelope-bulk" class="logo" />
           <h1>Let's get in touch</h1>
           <form action="#" method="post">
             <div>
               <label for="contact-name">name</label>
-              <input type="text" id="contact-name" name="contact-name" />
+              <input
+                type="text"
+                id="contact-name"
+                name="contact-name"
+                placeholder="Ari Safari"
+              />
             </div>
             <div>
               <label for="contact-email">email</label>
-              <input type="text" id="contact-email" name="contact-email" />
+              <input
+                type="text"
+                id="contact-email"
+                name="contact-email"
+                placeholder="arisafari@mail.com"
+              />
             </div>
             <div>
               <label for="contact-dept">department</label>
