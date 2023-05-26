@@ -1,32 +1,144 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>HTML and CSS for Complete Beginners Homework: Dashboard</title>
+    <title>HTML and CSS for Complete Beginners Homework: Dashboard</title>
 
-		<!-- This CSS and font is purely for presentational purposes. -->
-		<link rel="stylesheet" href="css/presentation.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-		<style>
-			/* Write your CSS here */
-		</style>
-	</head>
-	<body class="flip">
-		<section class="learn">
-			<!-- Practice area start -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", monospace;
+      }
 
-			<!-- Write your HTML here -->
+      .learn {
+        background-color: #f7f8f8;
+        display: flex;
+        justify-content: center;
+      }
 
-			<!-- Practice area end -->
-		</section>
+      .container {
+        background-color: #fff;
+        padding: 3rem;
+      }
 
-		<section class="preview" data-content="Dashboard">
-			<img width="971px" src="images/reference/dashboard.png" alt="Dashboard" />
-		</section>
-	</body>
+      .title {
+        font-size: 2rem;
+        font-weight: 900;
+        margin-bottom: 3rem;
+      }
+
+      .container-cards {
+        border: 1px solid #e7e7e7;
+        border-radius: 4px;
+        padding: 2rem;
+      }
+
+      .logo {
+        width: 4rem;
+        margin-bottom: 1.5rem;
+      }
+
+      h3 {
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+
+      .main-title {
+        color: #596a75;
+      }
+
+      .wrapper-remarks {
+        margin: 2rem 0;
+        font-size: 0.75rem;
+      }
+
+      .remarks {
+        color: #c6c6ca;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+      }
+
+      .remarks img {
+        width: 1.2rem;
+      }
+
+      .remarks span {
+        color: #70caa3;
+        font-weight: 600;
+        font-size: 1rem;
+        display: flex;
+      }
+
+      .btn {
+        display: inline-block;
+        border: 1px solid grey;
+        padding: 0.4rem 1.3rem;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #3b4b59;
+        font-size: 14px;
+      }
+
+      .btn img {
+        width: 14px;
+      }
+    </style>
+  </head>
+  <body class="flip">
+    <section class="learn">
+      <div class="container">
+        <h1 class="title">Dashboard</h1>
+
+        <div class="container-cards">
+          <div class="card">
+            <img
+              class="logo"
+              src="images/dashboard/icon-money.svg"
+              alt="Icon Money"
+            />
+
+            <h3>$4,502</h3>
+            <p class="main-title">Earned this month</p>
+            <div class="wrapper-remarks">
+              <p class="remarks">
+                <span
+                  ><img
+                    src="images/dashboard/icon-arrow-green.svg"
+                    alt="arrow green"
+                  />
+                  +6.05%</span
+                >
+                than last month
+              </p>
+            </div>
+            <a class="btn" href="#"
+              >Earnings
+              <span
+                ><img
+                  src="images/dashboard/icon-arrow-right.svg"
+                  alt="icon-arrow-right" /></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="preview" data-content="Dashboard">
+      <img width="971px" src="images/reference/dashboard.png" alt="Dashboard" />
+    </section>
+  </body>
 </html>
