@@ -29,6 +29,12 @@
         justify-content: center;
       }
 
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+
       .container {
         background-color: #fff;
         padding: 3rem;
@@ -44,6 +50,7 @@
         border: 1px solid #e7e7e7;
         border-radius: 4px;
         padding: 2rem;
+        min-width: 250px;
       }
 
       .logo {
@@ -77,24 +84,32 @@
       }
 
       .remarks span {
-        color: #70caa3;
         font-weight: 600;
         font-size: 1rem;
         display: flex;
       }
 
-      .btn {
-        display: inline-block;
-        border: 1px solid grey;
-        padding: 0.4rem 1.3rem;
-        border-radius: 4px;
-        text-decoration: none;
-        color: #3b4b59;
-        font-size: 14px;
+      .green {
+        color: #70caa3;
       }
 
-      .btn img {
-        width: 14px;
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 20px;
+        background-color: transparent;
+        border: 1px solid #3b4b59;
+        border-radius: 4px;
+      }
+
+      .btn-icon {
+        display: flex;
+        align-items: center;
+      }
+      .btn-icon img {
+        width: 16px;
       }
     </style>
   </head>
@@ -103,35 +118,93 @@
       <div class="container">
         <h1 class="title">Dashboard</h1>
 
-        <div class="container-cards">
-          <div class="card">
-            <img
-              class="logo"
-              src="images/dashboard/icon-money.svg"
-              alt="Icon Money"
-            />
-
-            <h3>$4,502</h3>
-            <p class="main-title">Earned this month</p>
-            <div class="wrapper-remarks">
-              <p class="remarks">
-                <span
-                  ><img
-                    src="images/dashboard/icon-arrow-green.svg"
-                    alt="arrow green"
-                  />
-                  +6.05%</span
-                >
-                than last month
-              </p>
+        <div class="wrapper">
+          <div class="container-cards">
+            <div class="card">
+              <img
+                class="logo"
+                src="images/dashboard/icon-money.svg"
+                alt="Icon Money"
+              />
+              <h3>$4,502</h3>
+              <p class="main-title">Earned this month</p>
+              <div class="wrapper-remarks">
+                <p class="remarks">
+                  <span class="green"
+                    ><img
+                      src="images/dashboard/icon-arrow-green.svg"
+                      alt="arrow-green"
+                    />
+                    +6.05%</span
+                  >
+                  than last month
+                </p>
+              </div>
+              <button class="btn">
+                <div class="text">Earnings</div>
+                <div class="btn-icon">
+                  <img src="images/dashboard/icon-arrow-right.svg" alt="" />
+                </div>
+              </button>
             </div>
-            <a class="btn" href="#"
-              >Earnings
-              <span
-                ><img
-                  src="images/dashboard/icon-arrow-right.svg"
-                  alt="icon-arrow-right" /></span
-            ></a>
+          </div>
+          <div class="container-cards">
+            <div class="card">
+              <img
+                class="logo"
+                src="images/dashboard/icon-money.svg"
+                alt="Icon Money"
+              />
+              <h3>$4,502</h3>
+              <p class="main-title">Earned this month</p>
+              <div class="wrapper-remarks">
+                <p class="remarks">
+                  <span class="green"
+                    ><img
+                      src="images/dashboard/icon-arrow-green.svg"
+                      alt="arrow-green"
+                    />
+                    +6.05%</span
+                  >
+                  than last month
+                </p>
+              </div>
+              <button class="btn">
+                <div class="text">Earnings</div>
+                <div class="btn-icon">
+                  <img src="images/dashboard/icon-arrow-right.svg" alt="" />
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="container-cards">
+            <div class="card">
+              <img
+                class="logo"
+                src="images/dashboard/icon-money.svg"
+                alt="Icon Money"
+              />
+              <h3>$4,502</h3>
+              <p class="main-title">Earned this month</p>
+              <div class="wrapper-remarks">
+                <p class="remarks">
+                  <span class="green"
+                    ><img
+                      src="images/dashboard/icon-arrow-green.svg"
+                      alt="arrow-green"
+                    />
+                    +6.05%</span
+                  >
+                  than last month
+                </p>
+              </div>
+              <button class="btn">
+                <div class="text">Earnings</div>
+                <div class="btn-icon">
+                  <img src="images/dashboard/icon-arrow-right.svg" alt="" />
+                </div>
+              </button>
+            </div>
           </div>
         </div>
       </div>
