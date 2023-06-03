@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTML and CSS for Complete Beginners Homework: Dashboard</title>
+
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", monospace;
+      }
+
+      .learn {
+        background-color: #f7f8f8;
+        display: flex;
+        justify-content: center;
+      }
+
+      .box {
+        background-color: white;
+        border-radius: 8px;
+        padding: 3rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+        color: #132a3b;
+        margin-bottom: 3rem;
+      }
+
+      .wrapper {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .card {
+        border: 1px solid #132a3b1f;
+        border-radius: 4px;
+        padding: 2rem;
+        min-width: 250px;
+      }
+
+      .card p {
+        margin-bottom: 2rem;
+      }
+
+      .card p span {
+        font-size: 12px;
+        color: #132a3b7f;
+      }
+
+      .card p img {
+        width: 18px;
+      }
+
+      .icon-logo {
+        width: 4rem;
+        margin-bottom: 2rem;
+      }
+
+      .data {
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .up {
+        color: #70caa3;
+      }
+
+      .down {
+        color: #db7783;
+      }
+
+      button {
+        background-color: transparent;
+        padding: 8px 24px;
+        border: 1px solid;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      button img {
+        width: 14px;
+      }
+    </style>
+  </head>
+  <body class="flip">
+    <section class="learn">
+      <div class="box">
+        <h1>Dashboard</h1>
+
+        <div class="wrapper">
+          <div class="card">
+            <img
+              class="icon-logo"
+              src="images/dashboard/icon-money.svg"
+              alt="icon-money"
+            />
+            <h2>$4,502</h2>
+            <p class="category">Earned this month</p>
+            <p class="data up">
+              <img
+                src="images/dashboard/icon-arrow-green.svg"
+                alt="icon-arrow-green"
+              />
+              +6.05%
+              <span>than last month</span>
+            </p>
+            <button>
+              Earnings
+              <img
+                src="images/dashboard/icon-arrow-right.svg"
+                alt="icon-arrow-right"
+              />
+            </button>
+          </div>
+
+          <div class="card">
+            <img
+              class="icon-logo"
+              src="images/dashboard/icon-sales.svg"
+              alt="icon-sales"
+            />
+            <h2>22</h2>
+            <p class="category">New Sales</p>
+            <p class="data up">
+              <img
+                src="images/dashboard/icon-arrow-green.svg"
+                alt="icon-arrow-green"
+              />
+              +16.45%
+              <span>than last month</span>
+            </p>
+            <button>
+              Sales
+              <img
+                src="images/dashboard/icon-arrow-right.svg"
+                alt="icon-arrow-right"
+              />
+            </button>
+          </div>
+
+          <div class="card">
+            <img
+              class="icon-logo"
+              src="images/dashboard/icon-chat.svg"
+              alt="icon-chat"
+            />
+            <h2>7</h2>
+            <p class="category">New Comments</p>
+            <p class="data down">
+              <img
+                src="images/dashboard/icon-arrow-red.svg"
+                alt="icon-arrow-red"
+              />
+              -19%
+              <span>than last month</span>
+            </p>
+            <button>
+              Comments
+              <img
+                src="images/dashboard/icon-arrow-right.svg"
+                alt="icon-arrow-right"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="preview" data-content="Dashboard">
+      <img width="971px" src="images/reference/dashboard.png" alt="Dashboard" />
+    </section>
+  </body>
+</html>

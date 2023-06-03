@@ -100,8 +100,14 @@
 
       input#remember-me {
         margin-right: 0.8rem;
-        width: 1.2rem;
-        height: 1.2rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        display: inline-flex;
+      }
+
+      input#remember-me:checked {
+        background-color: red;
+        color: #132a3b;
       }
 
       /* ==== Global style end ==== */
@@ -124,6 +130,7 @@
       #login-remember {
         display: flex;
         margin-bottom: 2rem;
+        align-items: center;
       }
 
       /* ==== Font style end ==== */
@@ -154,7 +161,7 @@
               />
             </div>
             <div id="check-remember">
-              <label for="login-remember" id="login-remember"
+              <label for="remember-me" id="login-remember"
                 ><input
                   type="checkbox"
                   id="remember-me"
