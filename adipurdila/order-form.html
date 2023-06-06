@@ -1,291 +1,262 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>HTML and CSS for Complete Beginners Homework: Order form</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- This CSS and font is purely for presentational purposes. -->
-    <link rel="stylesheet" href="css/presentation.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
-      rel="stylesheet"
-    />
+  <title>HTML and CSS for Complete Beginners Homework: Order form</title>
 
-    <style>
-      *,
-      *::before,
-      *::after {
-        font-family: "Poppins";
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
+  <!-- This CSS and font is purely for presentational purposes. -->
+  <link rel="stylesheet" href="css/presentation.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+    rel="stylesheet" />
 
-      .learn {
-        background-color: #f7f8f8;
-        display: flex;
-        justify-content: center;
-      }
+  <style>
+    *,
+    *::before,
+    *::after {
+      font-family: "Poppins";
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
 
-      .card {
-        width: 840px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.1);
-        padding: 3rem;
-      }
+    .learn {
+      background-color: #f7f8f8;
+      display: flex;
+      justify-content: center;
+    }
 
-      h1 {
-        font-size: 2rem;
-        font-weight: 900;
-        color: #132a3b;
-        margin-bottom: 3rem;
-      }
+    .card {
+      width: 840px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0px 3px 10px 1px rgba(0, 0, 0, 0.1);
+      padding: 3rem;
+    }
 
-      form {
-        width: 100%;
-      }
+    h1 {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #132a3b;
+      margin-bottom: 1rem;
+    }
 
-      label {
-        display: block;
-      }
+    form {
+      width: 100%;
+    }
 
-      form .row-1,
-      form .row-2,
-      form .row-3 {
-        display: flex;
-        justify-content: space-between;
-        gap: 1rem;
-      }
+    label {
+      display: block;
+      margin-top: 2rem;
+    }
 
-      .row-1 .input-box,
-      .row-2 .input-box,
-      .row-3 .input-box {
-        width: 100%;
-      }
+    form .row-1,
+    form .row-2,
+    form .row-3 {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
 
-      .input-box input,
-      .input-box select {
-        width: 100%;
-      }
-    </style>
-  </head>
+    .row-1 .input-box,
+    .row-2 .input-box,
+    .row-3 .input-box,
+    .comment {
+      width: 100%;
+    }
 
-  <body class="flip">
-    <section class="learn">
-      <!-- Practice area start -->
+    .input-box input,
+    .input-box select,
+    .comment textarea {
+      width: 100%;
+      font-size: 16px;
+      padding: 14px 20px;
+      border: 1px solid #d6d6d6;
+      border-radius: 4px;
+    }
 
-      <div class="card">
-        <h1>Your Order</h1>
-        <form action="#" method="post">
-          <!-- row-1 start -->
-          <div class="row-1">
+    .colors-options,
+    .team-options {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .colors-options label,
+    .team-options label {
+      margin-top: 1rem;
+    }
+
+    .colors-options .option-check {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    input[type="checkbox"] {
+      appearance: none;
+      margin: 0;
+      width: 24px;
+      height: 24px;
+    }
+
+    input[type="checkbox"]:disabled,
+    .colors-options .disabled {
+      opacity: 0.4;
+    }
+
+    input[type="checkbox"]::before {
+      content: url('images/order-form/checkbox-unchecked.svg');
+    }
+
+    input[type="checkbox"]:checked::before {
+      content: url('images/order-form/checkbox-checked.svg');
+    }
+
+
+
+    textarea {
+      resize: none;
+    }
+  </style>
+</head>
+
+<body class="flip">
+  <section class="learn">
+    <!-- Practice area start -->
+
+    <div class="card">
+      <h1>Your Order</h1>
+      <form action="#" method="post">
+        <!-- row-1 start -->
+        <div class="row-1">
+          <div class="input-box">
+            <label for="order-name">Name</label>
+            <input type="text" name="order-name" id="order-name" placeholder="Your full name" />
+          </div>
+
+          <div class="input-box">
+            <label for="order-email">Email address</label>
+            <input type="text" name="order-email" id="order-email" placeholder="chuck@roundhouse.com" />
+          </div>
+        </div>
+
+        <!-- row-2 start -->
+        <div>
+          <label for="order-address">Address</label>
+
+          <div class="row-2">
             <div class="input-box">
-              <label for="order-name">Name</label>
-              <input
-                type="text"
-                name="order-name"
-                id="order-name"
-                placeholder="Your full name"
-              />
+              <input type="text" name="order-address-street" id="order-address" placeholder="9 August Street" />
             </div>
-
             <div class="input-box">
-              <label for="order-email">Email address</label>
-              <input
-                type="text"
-                name="order-email"
-                id="order-email"
-                placeholder="chuck@roundhouse.com"
-              />
+              <input type="text" name="order-address-number" id="order-address" placeholder="Suite 122" />
             </div>
           </div>
+        </div>
 
-          <!-- row-2 start -->
-          <div>
-            <label for="order-address">Address</label>
-
-            <div class="row-2">
-              <div class="input-box">
-                <input
-                  type="text"
-                  name="order-address-street"
-                  id="order-address"
-                  placeholder="9 August Street"
-                />
-              </div>
-              <div class="input-box">
-                <input
-                  type="text"
-                  name="order-address-number"
-                  id="order-address"
-                  placeholder="Suite 122"
-                />
-              </div>
-            </div>
+        <!-- row-3 start -->
+        <div class="row-3">
+          <div class="input-box">
+            <label for="order-city">City</label>
+            <input type="text" name="order-city" id="order-city" placeholder="New jersey" />
           </div>
 
-          <!-- row-3 start -->
-          <div class="row-3">
-            <div class="input-box">
-              <label for="order-city">City</label>
-              <input
-                type="text"
-                name="order-city"
-                id="order-city"
-                placeholder="New jersey"
-              />
-            </div>
-
-            <div class="input-box">
-              <label for="order-state">State</label>
-              <select name="order-state" id="order-state">
-                <option value="Alabama">Alabama</option>
-                <option value="Alaska">Alaska</option>
-                <option value="Anchor">Anchor</option>
-              </select>
-            </div>
-
-            <div class="input-box">
-              <label for="order-zip">ZIP</label>
-              <input type="number" for="order-zip" id="order-zip" />
-            </div>
+          <div class="input-box">
+            <label for="order-state">State</label>
+            <select name="order-state" id="order-state">
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="Anchor">Anchor</option>
+            </select>
           </div>
 
-          <!-- row-4 start -->
-          <div class="row-4">
-            <label>What colours sample should we send you?</label>
+          <div class="input-box">
+            <label for="order-zip">ZIP</label>
+            <input type="number" for="order-zip" id="order-zip" />
+          </div>
+        </div>
 
-            <div class="colors-option">
-              <label for="colors-white">
-                <input
-                  type="checkbox"
-                  name="color-white"
-                  id="color-white"
-                  value="white"
-                />White
-              </label>
+        <!-- row-4 start -->
+        <div class="row-4">
+          <label>What colours sample should we send you?</label>
 
-              <label for="colors-magenta">
-                <input
-                  type="checkbox"
-                  name="colors-magenta"
-                  id="colors-magenta"
-                  value="magenta"
-                />Magenta
-              </label>
+          <div class="colors-options">
+            <label class="option-check disabled" for="colors-white">
+              <input type="checkbox" name="color-white" id="color-white" value="white" disabled />White
+            </label>
 
-              <label for="colors-coral">
-                <input
-                  type="checkbox"
-                  name="colors-coral"
-                  id="colors-coral"
-                  value="coral"
-                />
-                Coral
-              </label>
+            <label class="option-check" for="colors-magenta">
+              <input type="checkbox" name="colors-magenta" id="colors-magenta" value="magenta" />Magenta
+            </label>
 
-              <label for="colors-burgundy">
-                <input
-                  type="checkbox"
-                  name="colors-burgundy"
-                  id="colors-burgundy"
-                  value="burgundy"
-                />
-                Burgundy
-              </label>
+            <label class="option-check" for="colors-coral">
+              <input type="checkbox" name="colors-coral" id="colors-coral" value="coral" />
+              Coral
+            </label>
 
-              <label for="colors-Charcoal">
-                <input
-                  type="checkbox"
-                  name="colors-Charcoal"
-                  id="colors-Charcoal"
-                  value="Charcoal"
-                />
-                Charcoal
-              </label>
-            </div>
+            <label class="option-check" for="colors-burgundy">
+              <input type="checkbox" name="colors-burgundy" id="colors-burgundy" value="burgundy" />
+              Burgundy
+            </label>
+
+            <label class="option-check" for="colors-Charcoal">
+              <input type="checkbox" name="colors-Charcoal" id="colors-Charcoal" value="Charcoal" />
+              Charcoal
+            </label>
+          </div>
+        </div>
+
+        <!-- row-5 start -->
+        <div class="row-5">
+          <label>How large is your team?</label>
+
+          <div class="team-options">
+            <label for="small-team">
+              <input type="radio" name="small-team" id="small-team" value="1-5 people" />
+              1-5 People
+            </label>
+
+            <label for="middle-team">
+              <input type="radio" name="middle-team" id="middle-team" value="6-10 people" />
+              6-10 People
+            </label>
+
+            <label for="big-team">
+              <input type="radio" name="big-team" id="big-team" value="10+ people" />
+              10+ People
+            </label>
+          </div>
+        </div>
+
+        <!-- comment start -->
+        <div class="comment">
+          <label for="order-comment"> Comment </label>
+
+          <textarea name="order-comment" id="order-comment" cols="30" rows="10"></textarea>
+        </div>
+
+        <!-- remember and button order -->
+        <div class="row-button">
+          <div class="sign-up-section">
+            <input type="checkbox" id="sign-up" name="sign-up" value="sign-up" />
+            <label for="sign-up">Sign up for special offers</label>
           </div>
 
-          <!-- row-5 start -->
-          <div class="row-5">
-            <label>How large is your team?</label>
+          <button class="btn">Place Order</button>
+        </div>
+      </form>
+    </div>
 
-            <div class="team-option">
-              <label for="small-team">
-                <input
-                  type="radio"
-                  name="small-team"
-                  id="small-team"
-                  value="1-5 people"
-                />
-                1-5 People
-              </label>
+    <!-- Practice area end -->
+  </section>
 
-              <label for="middle-team">
-                <input
-                  type="radio"
-                  name="middle-team"
-                  id="middle-team"
-                  value="6-10 people"
-                />
-                6-10 People
-              </label>
+  <section class="preview" data-content="Order form">
+    <img width="903px" src="images/reference/order-form.png" alt="Order form" />
+  </section>
+</body>
 
-              <label for="big-team">
-                <input
-                  type="radio"
-                  name="big-team"
-                  id="big-team"
-                  value="10+ people"
-                />
-                10+ People
-              </label>
-            </div>
-          </div>
-
-          <!-- comment start -->
-          <div class="comment">
-            <label for="order-comment"> Comment </label>
-
-            <textarea
-              name="order-comment"
-              id="order-comment"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </div>
-
-          <!-- remember and button order -->
-          <div class="row-button">
-            <div class="sign-up-section">
-              <input
-                type="checkbox"
-                id="sign-up"
-                name="sign-up"
-                value="sign-up"
-              />
-              <label for="sign-up">Sign up for special offers</label>
-            </div>
-
-            <button class="btn">Place Order</button>
-          </div>
-        </form>
-      </div>
-
-      <!-- Practice area end -->
-    </section>
-
-    <section class="preview" data-content="Order form">
-      <img
-        width="903px"
-        src="images/reference/order-form.png"
-        alt="Order form"
-      />
-    </section>
-  </body>
 </html>
